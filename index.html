@@ -22,6 +22,7 @@
         :root {
             --primary-color: rgb(255, 246, 234);
             --secondary-color: #b87a07;
+
             --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
         }
 
@@ -165,8 +166,32 @@
                     </p>
                     <br>
                     <br>
+                
+                    <button type="button" class="btn text-light" style="background-color: #97692F;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Connect with me
+                    </button>
 
-                    <a href="#dream" class="button">See my dream collection</a>
+                    
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Hi there bestie😉</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Feel free to send me a DM on Instagram @stillthemercygirl!
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
 
@@ -179,64 +204,117 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/127/291/origina
             </div>
         </div>
     </div>
-    <div class="container section-3">
-        <div class="row">
-            <div class="col-12 col-md-4">
-                <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/127/317/original/pexels-solodsha-8105116.jpg?1716498554"
-                    alt="Jewelry" class="img-fluid img">
+
+
+    <div class="parent-container" style="display: flex; justify-content: center;">
+
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
             </div>
-            <div class=" col-12 col-md-7 mt-5">
-                <p class="p-1">
-                    From the moment light dances off a perfectly cut gemstone to the way a delicate chain adds a touch
-                    of
-                    elegance, jewelry
-                    has always captivated me. It's more than just adornment; it's a form of artistic expression, a
-                    conversation
-                    starter, and a way
-                    to celebrate life's special moments. <br>
-                    <br>
-                    <span id="about-me">My name is Mercy, and my favourite fashion accessory of all time is <span
-                            class="jewel">JEWELRY</span>. </span>From
-                    bracelets to necklaces and every other type of jewelry out there, I just can't seem to satisfy my
-                    love for them! <br>
-                    <br>
-                    Keep reading if you would like to know why I'm so obsessed with jewelry or if you also are a fan
-                    like me ^_^
-                </p>
-    
+
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card m-5 p-4" style="max-width: 1100px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="
+                    https://s3.amazonaws.com/shecodesio-production/uploads/files/000/127/389/original/landing.jpg?1716573948"
+                                    class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8" style="background-color: var(--primary-color);">
+                                <div class="card-body">
+                                    <h5 class="card-title">Elegant Diamond Solitaire Necklace</h5>
+                                    <p class="card-text">This stunning necklace features a brilliant-cut diamond, set in
+                                        a classic solitaire design. The diamond's exceptional
+                                        clarity and sparkle are showcased by its simple yet elegant setting, making it a
+                                        timeless piece perfect for any
+                                        occasion. Whether worn alone or layered with other necklaces, this diamond
+                                        solitaire adds a touch of sophistication to
+                                        any outfit..</p>
+                                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins
+                                            ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card m-5 p-4" style="max-width: 1100px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="
+                    https://s3.amazonaws.com/shecodesio-production/uploads/files/000/127/389/original/landing.jpg?1716573948"
+                                    class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8" style="background-color: var(--primary-color);">
+                                <div class="card-body">
+                                    <h5 class="card-title">Vintage Sapphire and Diamond Ring</h5>
+                                    <p class="card-text">A masterpiece of vintage craftsmanship, this ring combines the
+                                        deep blue allure of sapphires with the radiant sparkle of
+                                        diamonds. The intricate setting enhances the beauty of each gemstone, creating a
+                                        harmonious blend of colors and
+                                        brilliance. This ring is not only a statement piece but also a cherished
+                                        heirloom that exudes elegance and history.</p>
+                                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins
+                                            ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card m-5 p-4" style="max-width: 1100px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/127/926/original/pexels-jill-burrow-6858667.jpg?1717183511"
+                                    class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8" style="background-color: #f3f6e5;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Modern Gold Hoop Earrings</h5>
+                                    <p class="card-text">These sleek and contemporary gold hoop earrings are a must-have
+                                        for any jewelry collection. Their clean lines and
+                                        minimalist design make them versatile enough for everyday wear, yet stylish
+                                        enough for special occasions. Crafted from
+                                        high-quality gold, these hoops are both lightweight and durable, ensuring they
+                                        remain a favorite accessory for years to
+                                        come.</p>
+                                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins
+                                            ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-    
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
+    </div>
     </div>
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <script src="https://code.jquery.com/jquery-3.7.1.js"
-        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>`
