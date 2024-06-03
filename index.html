@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Nanum+Gothic+Coding&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poetsen+One&family=Scope+One&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Nanum+Gothic+Coding&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poetsen+One&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Scope+One&display=swap"
         rel="stylesheet">
     <style>
         :root {
@@ -27,8 +27,8 @@
         }
 
         body {
-            font-family: "Nanum Gothic Coding", monospace;
-            font-style: normal;
+            font-family: "Roboto Serif", serif;
+            font-optical-sizing: auto;
         }
 
         h1 {
@@ -52,7 +52,7 @@
         .p-1 {
             margin-top: 50px;
             font-size: 18px;
-            letter-spacing: 2px;
+
 
         }
 
@@ -82,13 +82,27 @@
             box-shadow: var(--box-shadow);
             color: white;
         }
+
+        @media (max-width: 767px) {
+            .card {
+                width: 70%;
+
+                /* adjust the width of the cards */
+            }
+
+            .card-body {
+                font-size: 2px;
+
+                /* adjust the font size of the card title */
+            }
+        }
     </style>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light shadow p-3 mb-5 rounded "
         style="background-color: rgb(255, 246, 234);">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -113,7 +127,8 @@
     <div class="container section-1">
         <div class="row">
             <div class="col-12 col-md-4">
-                <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/127/317/original/pexels-solodsha-8105116.jpg?1716498554"
+                <img src="
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/070/original/pexels-cottonbro-9428777.jpg?1717361281"
                     alt="Jewelry" class="img-fluid img">
             </div>
             <div class=" col-12 col-md-7">
@@ -166,12 +181,13 @@
                     </p>
                     <br>
                     <br>
-                
-                    <button type="button" class="btn text-light" style="background-color: #97692F;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+
+                    <button type="button" class="btn text-light" style="background-color: #97692F;"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal">
                         Connect with me
                     </button>
 
-                    
+
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
                         <div class="modal-dialog">
@@ -187,7 +203,7 @@
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
                                         data-bs-dismiss="modal">Close</button>
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -225,10 +241,10 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/127/291/origina
                         <div class="row g-0">
                             <div class="col-md-4">
                                 <img src="
-                    https://s3.amazonaws.com/shecodesio-production/uploads/files/000/127/389/original/landing.jpg?1716573948"
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/007/original/pexels-dashamak-17820836.jpg?1717272811"
                                     class="img-fluid rounded-start" alt="...">
                             </div>
-                            <div class="col-md-8" style="background-color: var(--primary-color);">
+                            <div class="col-md-8" style="background-color:#acaebdc8;">
                                 <div class="card-body">
                                     <h5 class="card-title">Elegant Diamond Solitaire Necklace</h5>
                                     <p class="card-text">This stunning necklace features a brilliant-cut diamond, set in
@@ -250,10 +266,10 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/127/291/origina
                         <div class="row g-0">
                             <div class="col-md-4">
                                 <img src="
-                    https://s3.amazonaws.com/shecodesio-production/uploads/files/000/127/389/original/landing.jpg?1716573948"
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/006/original/pexels-the-glorious-studio-3584518-18451697.jpg?1717271782"
                                     class="img-fluid rounded-start" alt="...">
                             </div>
-                            <div class="col-md-8" style="background-color: var(--primary-color);">
+                            <div class="col-md-8" style="background-color:#eafcff;">
                                 <div class="card-body">
                                     <h5 class="card-title">Vintage Sapphire and Diamond Ring</h5>
                                     <p class="card-text">A masterpiece of vintage craftsmanship, this ring combines the
@@ -310,11 +326,10 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/127/291/origina
 
 
 
-
-    <script src="https://code.jquery.com/jquery-3.7.1.js"
-        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous">
-        </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
 </body>
 
 </html>`
